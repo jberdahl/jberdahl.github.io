@@ -14,17 +14,17 @@ navigation:
  - title: What's New
    url: /index.html
  - title: Bio
-   url: /bio
+   url: /bio.html
  - title: Research
-   url: /research
+   url: /research.html
  - title: Teaching
-   url: /teaching
+   url: /teaching.html
  - title: Outreach
-   url: /outreach
+   url: /outreach.html
  - title: Blog
-   url: /blog
+   url: /blog.html
  - title: Contact
-   url: /contact
+   url: /contact.html
 
 social:
    github: jberdahl
