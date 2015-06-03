@@ -1,11 +1,17 @@
 ---
-layout: page
+layout: default
 title: Research
-permalink: /research/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+<div id="research">
+  <h1>Articles</h1>
+  <ul class="posts noList">
+    {% for post in site.posts %}
+      <li>
+      	<span class="date">{{ post.date | date_to_string }}</span>
+      	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      	<p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
